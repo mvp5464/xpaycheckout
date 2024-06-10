@@ -6,7 +6,7 @@ const Benefits = () => {
     <div className=" bg-[#141414] text-white">
       <Wrapper>
         <div className=" flex flex-col justify-center items-center gap-20 py-20">
-          <div className=" font-[700] text-[2.7rem]">
+          <div className=" font-[650] text-[2.7rem]">
             Single integration, many benefits
           </div>
           <div className="grid grid-cols-2 gap-10">

@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={outfit.className}>
-        <div className=" bg-slate-300 w-screen h-screen overflow-x-hidden ">
+        <div className=" bg-white w-screen h-screen overflow-x-hidden ">
           {children}
         </div>
       </body>

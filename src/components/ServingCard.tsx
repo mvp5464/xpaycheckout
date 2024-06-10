@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const SingleServing = ({
   image,
   title,
@@ -10,10 +12,14 @@ const SingleServing = ({
   return (
     <div>
       <div className="">
-        <div className=" ">
-          <div>{image}</div>
-          <div>{title}</div>
-          <div>{body}</div>
+        <div className=" bg-[#f2fbff] h-[23rem] rounded-3xl px-[1.6rem] py-4">
+          <div className=" py-2">
+            <Image src={image} alt={"Logo"} width={65} height={50} />
+          </div>
+          <div className=" text-[#141414] font-semibold text-[1.32rem] my-4">
+            {title}
+          </div>
+          <div className=" text-[#4f5874] text-[1.06rem]">{body}</div>
         </div>
       </div>
     </div>
