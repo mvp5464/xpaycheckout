@@ -3,14 +3,16 @@ import SingleBenefits from "../BenefitsCard";
 
 const Benefits = () => {
   return (
-    <div>
+    <div className=" bg-[#141414] text-white">
       <Wrapper>
-        <div className=" bg-blue-400">
-          <div>Single integration, many benefits</div>
-          <div className="grid grid-cols-2">
+        <div className=" flex flex-col justify-center items-center gap-20 py-20">
+          <div className=" font-[700] text-[2.7rem]">
+            Single integration, many benefits
+          </div>
+          <div className="grid grid-cols-2 gap-10">
             <div>
               <SingleBenefits
-                image={"imagelink/path"}
+                image={"/clockImage.avif"}
                 title={"Save 200+ Developer hours per month"}
                 body={
                   "Your devs don't need to spend any time integrating several PGs or writing custom code"
@@ -19,7 +21,7 @@ const Benefits = () => {
             </div>
             <div>
               <SingleBenefits
-                image={"imagelink/path"}
+                image={"/graphImage.avif"}
                 title={"Boost success rates by 100%"}
                 body={
                   "Users see Local Payment options leading to more trust and more payment options"
@@ -28,7 +30,7 @@ const Benefits = () => {
             </div>
             <div>
               <SingleBenefits
-                image={"imagelink/path"}
+                image={"/dollerImage.avif"}
                 title={"Reduce transaction cost by 30%"}
                 body={
                   "We average 4% on international transactions, while Stripe charges 6% and PayPal 9%"
@@ -37,7 +39,7 @@ const Benefits = () => {
             </div>
             <div>
               <SingleBenefits
-                image={"imagelink/path"}
+                image={"/lockImage.avif"}
                 title={"Enterprise grade security"}
                 body={
                   "Our systems are highly secure and battle tested. We are compliant with national data and compliance laws in major geographies."
