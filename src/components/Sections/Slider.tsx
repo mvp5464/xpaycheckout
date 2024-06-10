@@ -5,8 +5,8 @@ const Slider = () => {
   return (
     <div className=" bg-[#ebebeb]q bg-white py-1">
       <Wrapper>
-        <div className=" my-20 py-20 bg-[#f2fbff] rounded-lg">
-          <div className=" text-center text-2xl text-[#141414] font-medium mb-4">
+        <div className=" my-16 py-16 bg-[#f2fbff] rounded-lg">
+          <div className=" text-center text-2xl text-[#141414] font-medium mb-8">
             Helping teams at the world's best companies
           </div>
           <div className=" flex gap-16 overflow-x-auto mx-8">
