@@ -1,25 +1,42 @@
+import Image from "next/image";
 import WaitlistButton from "../WaitlistButton";
 import Wrapper from "../Wrapper";
 
 const HeroSection = () => {
   return (
-    <div>
+    <div className=" bg-[#141414] text-white ">
       <Wrapper>
-        <div className=" bg-blue-400">
-          <div className=" flex justify-between ">
-            <div>
-              <div>
-                payments from any country via cards, bank accounts & more
+        <div>
+          <div className=" grid grid-cols-12  sjustify-between ">
+            <div className=" col-span-7">
+              <div className=" font-medium text-5xl leading-tight	my-4">
+                Accept customer payments from any country via cards, bank
+                accounts & more
               </div>
-              <div>
+              <div className=" text-2xl mb-10">
                 Go live in US, EU, MENA and SEA via a single integration in
                 1/10th the time
               </div>
-              <WaitlistButton />
+              <WaitlistButton color={"white"} />
             </div>
-            <div>Globe image</div>
+            <div className=" col-span-5">
+              <Image
+                src={"/GlobeImage.avif"}
+                alt={"Logo"}
+                width={500}
+                height={500}
+              />
+            </div>
           </div>
-          <div>Backed by Y cominator (image)</div>
+          <div className=" flex gap-1 justify-center items-center font-extralight text-xl pb-10">
+            <span>Backed by </span>
+            <Image
+              src={"/Y-Combinator.avif"}
+              alt={"Logo"}
+              width={150}
+              height={100}
+            />
+          </div>
         </div>
       </Wrapper>
     </div>
