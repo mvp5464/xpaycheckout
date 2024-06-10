@@ -15,7 +15,7 @@ const Appbar = () => {
             <button>Waitlist</button>
             <button>Contact</button>
             <button>Blogs</button>
-            <button className=" flex bg-white text-black rounded-full py-3 px-6">
+            <button className=" flex bg-white hover:bg-[#141414] hover:text-white border border-white text-[#141414] rounded-full py-3 px-6">
               <span>Talk to Founder&nbsp;</span> <RightArrow />
             </button>
           </div>

@@ -13,14 +13,15 @@ const EmailWaitlist = () => {
               Sign up for xPay now and get 20% discount on international payment
               fees
             </div>
-            <div className=" bg-sfuchsia-400 w-full flex justify-center items-center gap-3">
+            <div className=" bg-sfuchsia-400 w-full flex justify-center items-center gap-3 text-black">
               <input
                 className=" h-14 w-[60%] rounded-lg placeholder:pl-5"
+                name="email"
                 type="text"
                 placeholder="Email Address"
               />
               <div>
-                <button className=" py-4 px-4 rounded-xl bg-[#45abff] ">
+                <button className=" py-4 px-4 rounded-xl bg-[#45abff] hover:opacity-80 ">
                   Join
                 </button>
               </div>

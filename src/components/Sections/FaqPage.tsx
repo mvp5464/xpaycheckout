@@ -5,7 +5,10 @@ const FaqPage = () => {
   return (
     <div>
       <Wrapper>
-        <div className=" bg-emerald-500">
+        <div className=" py-20">
+          <div className=" font-[550] text-5xl text-center leading-tight mb-12">
+            FAQs
+          </div>
           <div>
             <FaqPageCard
               title={"What problem does xPay solve?"}
