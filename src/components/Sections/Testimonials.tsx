@@ -5,15 +5,17 @@ const Testimonials = () => {
   return (
     <div>
       <Wrapper>
-        <div className=" bg-orange-400">
-          <div>Testimonials</div>
-          <div className=" grid grid-cols-3">
+        <div className=" py-20">
+          <div className=" font-[550] text-5xl text-center leading-tight mb-12">
+            Testimonials
+          </div>
+          <div className=" grid grid-cols-3 gap-6">
             <div>
               <TestimonialsCard
                 content={
                   "Cheers to the xPay crew for their top-notch product! Transitioning from other services to xPay was a breeze—appreciate the streamlined process and clear API documentation."
                 }
-                image={"image"}
+                image={"/person1.avif"}
                 name={"Shubham Sinha"}
                 founder={"Co-Founder Peppyhop"}
               />
@@ -23,7 +25,7 @@ const Testimonials = () => {
                 content={
                   "The team at xPay has made integration a breeze. Their prompt support had us up and running in no time. It's simplicity done right."
                 }
-                image={"image"}
+                image={"/person2.avif"}
                 name={"Prateek Sachan"}
                 founder={"Founding Team Bolna"}
               />
@@ -33,7 +35,7 @@ const Testimonials = () => {
                 content={
                   "Absolutely thrilled with the quick service! My first payment of $600 was processed seamlessly, and I'm excited for more transactions this week. Big thanks to the team for making this happen!"
                 }
-                image={"image"}
+                image={"/person3.avif"}
                 name={"Gaurav Toora"}
                 founder={"Founder at Rhym"}
               />
