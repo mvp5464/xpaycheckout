@@ -4,9 +4,9 @@ import RightArrow from "../icons/RightArrow";
 
 const Appbar = () => {
   return (
-    <div className=" bg-[#141414] text-[#ebebeb] sticky top-0 blur-[.5px]">
+    <div className=" bg-[#141414] text-[#ebebeb] sticky top-0 ">
       <Wrapper>
-        <div className=" flex justify-between items-center h-24 ">
+        <div className=" flex justify-between items-center h-24 blur-[.5px] ">
           <div>
             <Image src={"/Logo.avif"} alt={"Logo"} width={90} height={50} />
           </div>

@@ -14,7 +14,7 @@ import FeaturesSection from "@/components/Sections/FeaturesSection";
 
 export default function Home() {
   return (
-    <div>
+    <div id="top">
       <Appbar />
       <HeroSection />
       <Slider />
