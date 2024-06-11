@@ -1,7 +1,19 @@
+"use client";
 import Image from "next/image";
 import Wrapper from "../Wrapper";
 
 const Slider = () => {
+  const allLogos = [
+    "/cLogo1.avif",
+    "/cLogo2.avif",
+    "/cLogo3.avif",
+    "/cLogo4.avif",
+    "/cLogo5.svg",
+    "/cLogo6.avif",
+    "/cLogo7.avif",
+    "/cLogo8.avif",
+    "/cLogo9.webp",
+  ];
   return (
     <div className=" bg-[#ebebeb]q bg-white py-1">
       <Wrapper>
@@ -9,16 +21,38 @@ const Slider = () => {
           <div className=" text-center text-2xl text-[#141414] font-medium mb-8">
             Helping teams at the world's best companies
           </div>
-          <div className=" flex gap-16 overflow-x-auto mx-8">
-            <Image src={"/cLogo1.avif"} alt={"Logo"} width={180} height={50} />
-            <Image src={"/cLogo2.avif"} alt={"Logo"} width={200} height={100} />
-            <Image src={"/cLogo3.avif"} alt={"Logo"} width={200} height={100} />
-            <Image src={"/cLogo4.avif"} alt={"Logo"} width={200} height={100} />
-            <Image src={"/cLogo5.svg"} alt={"Logo"} width={200} height={100} />
-            <Image src={"/cLogo6.avif"} alt={"Logo"} width={200} height={100} />
-            <Image src={"/cLogo7.avif"} alt={"Logo"} width={200} height={100} />
-            <Image src={"/cLogo8.avif"} alt={"Logo"} width={200} height={100} />
-            <Image src={"/cLogo9.webp"} alt={"Logo"} width={200} height={100} />
+          <div
+            className=" flex overflow-hidden mx-10"
+            style={{
+              maskImage:
+                "linear-gradient(to right, hsl(0 0% 0% /0), hsl(0 0% 0% /1) 10%, hsl(0 0% 0% /1) 90%, hsl(0 0% 0% /0))",
+            }}
+          >
+            <div className=" flex gap-20 justify-arounds pr-20 animate-loop-scroll ">
+              {allLogos.map((logo) => (
+                <Image
+                  src={logo}
+                  alt={"Logo"}
+                  width={180}
+                  height={50}
+                  className=" max-w-none"
+                />
+              ))}
+            </div>
+            <div
+              className=" flex gap-20 pr-20 justify-arounds animate-loop-scroll"
+              aria-hidden="true"
+            >
+              {allLogos.map((logo) => (
+                <Image
+                  src={logo}
+                  alt={"Logo"}
+                  width={180}
+                  height={50}
+                  className="max-w-none"
+                />
+              ))}
+            </div>
           </div>
         </div>
       </Wrapper>

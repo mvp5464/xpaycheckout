@@ -10,7 +10,7 @@ const YoutubeFrame = () => {
             width="90%"
             height="450px"
             src={
-              "https://www.youtube.com/embed/_oI3TlyYwWg?iv_load_policy=3&rel=0&modestbranding=1&playsinline=1&autoplay=1"
+              "https://www.youtube.com/embed/_oI3TlyYwWg?showinfo=0&iv_load_policy=3&controls=0"
             }
             title="YouTube video player"
             allow="accelerometer; gyroscope; picture-in-picture;"
