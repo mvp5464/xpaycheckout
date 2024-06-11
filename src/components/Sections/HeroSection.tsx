@@ -7,8 +7,8 @@ const HeroSection = () => {
     <div className=" bg-[#141414] text-white ">
       <Wrapper>
         <div>
-          <div className=" grid grid-cols-12  sjustify-between ">
-            <div className=" col-span-7 pl-3">
+          <div className=" grid grid-cols-12 pb-5">
+            <div className=" col-span-7 pl-2">
               <div className=" font-medium text-5xl leading-tight	my-4">
                 Market, Sell and Ship to customers from 150+ countries
               </div>
