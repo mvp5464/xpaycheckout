@@ -10,12 +10,12 @@ const Appbar = () => {
           <div>
             <Image src={"/Logo.avif"} alt={"Logo"} width={90} height={50} />
           </div>
-          <div className=" flex gap-5">
+          <div className=" flex gap-6">
             <button>Pricing</button>
             <button>Waitlist</button>
             <button>Contact</button>
             <button>Blogs</button>
-            <button className=" flex bg-white hover:bg-[#141414] hover:text-white border border-white text-[#141414] rounded-full py-3 px-6">
+            <button className=" flex bg-white hover:bg-[#141414] hover:text-white border border-white text-[#141414] rounded-full py-[0.7rem] px-6">
               <span>Talk to Founder&nbsp;</span> <RightArrow />
             </button>
           </div>

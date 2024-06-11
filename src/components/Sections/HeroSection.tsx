@@ -8,10 +8,9 @@ const HeroSection = () => {
       <Wrapper>
         <div>
           <div className=" grid grid-cols-12  sjustify-between ">
-            <div className=" col-span-7">
+            <div className=" col-span-7 pl-3">
               <div className=" font-medium text-5xl leading-tight	my-4">
-                Accept customer payments from any country via cards, bank
-                accounts & more
+                Market, Sell and Ship to customers from 150+ countries
               </div>
               <div className=" text-2xl mb-10">
                 Go live in US, EU, MENA and SEA via a single integration in

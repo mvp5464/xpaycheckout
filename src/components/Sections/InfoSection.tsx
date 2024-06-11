@@ -6,7 +6,7 @@ const InfoSection = () => {
     <div>
       <Wrapper>
         <div className=" border-b border-dashed mb-9">
-          <div className=" grid grid-cols-2 gap-3 py-14">
+          <div className=" grid grid-cols-2 gap-3 py-10">
             <div>
               <Image
                 src={"/xPayBlackIcon.avif"}

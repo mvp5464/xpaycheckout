@@ -23,7 +23,7 @@ const TestimonialsCard = ({
               height={50}
             />
           </div>
-          <div className=" text-[0.88rem] text-[#333333] leading-relaxed">
+          <div className=" text-[0.85rem] text-[#333333] leading-relaxed">
             {content}
           </div>
         </div>
@@ -32,7 +32,7 @@ const TestimonialsCard = ({
             <Image
               src={image}
               alt={"Logo"}
-              width={60}
+              width={55}
               height={50}
               className=" rounded-full"
             />
@@ -40,7 +40,7 @@ const TestimonialsCard = ({
           <div className=" text-[#333333] font-semibold text-[1.4rem] ">
             {name}
           </div>
-          <div className=" text-[#4f4f4f] text-xl ">{founder}</div>
+          <div className=" text-[#4f4f4f] text-[1.18rem] ">{founder}</div>
         </div>
       </div>
     </div>
