@@ -11,7 +11,7 @@ const Animations = ({ children }: { children: ReactNode }) => {
     if (isInView) {
       mainControls.start("visible");
     }
-  }, [isInView]);
+  }, [isInView, mainControls]);
   return (
     <div>
       <motion.div

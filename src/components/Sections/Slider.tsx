@@ -19,7 +19,7 @@ const Slider = () => {
       <Wrapper>
         <div className=" my-16 py-16 bg-[#f2fbff] rounded-lg">
           <div className=" text-center text-2xl text-[#141414] font-medium mb-8 mx-6">
-            Helping teams at the world's best companies
+            Helping teams at the world&apos;s best companies
           </div>
           <div
             className=" flex overflow-hidden mx-10"
