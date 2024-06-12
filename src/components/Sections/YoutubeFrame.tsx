@@ -5,7 +5,9 @@ const YoutubeFrame = () => {
     <div className="bg-[#141414] text-white">
       <Wrapper>
         <div className=" flex flex-col gap-8 py-20 justify-center items-center">
-          <div className=" font-[500] text-5xl mb-5">Know the product</div>
+          <div className=" md:font-[500] font-[450] md:text-5xl text-3xl mb-5">
+            Know the product
+          </div>
           <iframe
             width="90%"
             height="450px"

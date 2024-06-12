@@ -6,10 +6,10 @@ const Serving = () => {
     <div>
       <Wrapper>
         <div className=" py-20">
-          <div className=" font-[550] text-5xl text-center leading-tight mb-16">
+          <div className=" font-[550] md:text-5xl text-2xl text-center leading-tight mb-16">
             Serving global companies in global industries
           </div>
-          <div className=" grid grid-cols-4 gap-6">
+          <div className=" grid md:grid-cols-4 gap-6">
             <div>
               <SingleServing
                 image={"/cartImage.avif"}

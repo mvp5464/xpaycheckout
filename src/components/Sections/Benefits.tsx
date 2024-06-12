@@ -5,11 +5,11 @@ const Benefits = () => {
   return (
     <div className=" bg-[#141414] text-white">
       <Wrapper>
-        <div className=" flex flex-col justify-center items-center gap-20 py-20">
-          <div className=" font-[650] text-[2.7rem]">
+        <div className=" flex flex-col justify-center items-center md:gap-20 gap-12 py-20">
+          <div className=" font-[650] text-center md:text-[2.7rem] text-[1.6rem] ">
             Single integration, many benefits
           </div>
-          <div className="grid grid-cols-2 gap-10">
+          <div className="grid md:grid-cols-2 gap-10">
             <div>
               <SingleBenefits
                 image={"/clockImage.avif"}

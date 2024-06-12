@@ -13,8 +13,8 @@ const TestimonialsCard = ({
 }) => {
   return (
     <div>
-      <div className=" flex flex-col justify-between items-center border rounded-2xl p-4 h-80">
-        <div className="flex flex-col justify-start items-center">
+      <div className=" flex flex-col justify-between items-center border rounded-2xl p-4 md:h-80">
+        <div className="flex flex-col justify-start items-center mb-8 md:mb-0">
           <div className=" pb-2">
             <Image
               src={"/commaImage.avif"}
@@ -28,7 +28,7 @@ const TestimonialsCard = ({
           </div>
         </div>
         <div className="flex flex-col justify-end items-center">
-          <div>
+          <div className=" w-10 md:w-25">
             <Image
               src={image}
               alt={"Logo"}
@@ -37,10 +37,12 @@ const TestimonialsCard = ({
               className=" rounded-full"
             />
           </div>
-          <div className=" text-[#333333] font-semibold text-[1.4rem] ">
+          <div className=" text-[#333333] font-semibold md:text-[1.4rem] text-[1rem] ">
             {name}
           </div>
-          <div className=" text-[#4f4f4f] text-[1.18rem] ">{founder}</div>
+          <div className=" text-[#4f4f4f] md:text-[1.18rem] text-[0.8rem] ">
+            {founder}
+          </div>
         </div>
       </div>
     </div>

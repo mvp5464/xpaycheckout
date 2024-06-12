@@ -5,8 +5,8 @@ const FaqPage = () => {
   return (
     <div>
       <Wrapper>
-        <div className=" py-16">
-          <div className=" font-[450] text-[2.8rem] text-center leading-tight mb-12">
+        <div className=" md:py-16 py-10">
+          <div className=" font-[450] md:text-[2.8rem] text-[1.6rem] text-center leading-tight md:mb-12 mb-2">
             FAQs
           </div>
           <div>

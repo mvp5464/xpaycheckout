@@ -5,7 +5,7 @@ const PaymentLinks = () => {
   return (
     <div>
       <div className=" ">
-        <div className=" grid grid-cols-2 gap-12 items-center">
+        <div className=" grid md:grid-cols-2 gap-12 items-center">
           <div className=" bg-red-400s">
             <FeaturesText
               title={"Payment Links"}
@@ -20,6 +20,7 @@ const PaymentLinks = () => {
               alt={"Logo"}
               width={450}
               height={450}
+              unoptimized
             />
           </div>
         </div>

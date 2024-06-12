@@ -12,7 +12,7 @@ const SingleServing = ({
   return (
     <div>
       <div className="">
-        <div className=" bg-[#f2fbff] h-[23rem] rounded-3xl px-[1.6rem] py-4">
+        <div className=" bg-[#f2fbff] md:h-[23rem] rounded-3xl px-[1.6rem] py-4">
           <div className=" py-2">
             <Image src={image} alt={"Logo"} width={65} height={50} />
           </div>

@@ -7,10 +7,10 @@ const Pricing = () => {
     <div>
       <Wrapper>
         <div className=" py-20">
-          <div className=" font-[550] text-5xl text-center leading-tight mb-16">
+          <div className=" md:font-[550] font-[450] md:text-5xl text-[1.7rem] text-center leading-tight mb-16">
             Premium features without premium pricing
           </div>
-          <div className=" grid grid-cols-2 gap-10">
+          <div className=" grid md:grid-cols-2 gap-10">
             <PricingCard
               textColor={"[#141414]"}
               bgColor={"white"}

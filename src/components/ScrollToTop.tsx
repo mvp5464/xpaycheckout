@@ -22,7 +22,7 @@ const ScrollToTop = () => {
       <button
         className={`${
           isVisible ? "block" : "hidden"
-        } px-5 py-3 text-[0.9rem] rounded-full bg-[#141414] text-white fixed bottom-7 right-20`}
+        } px-5 py-3 text-[0.9rem] rounded-full bg-[#141414] text-white fixed bottom-8 right-10`}
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         Scroll to Top

@@ -6,7 +6,7 @@ const InfoSection = () => {
     <div>
       <Wrapper>
         <div className=" border-b border-dashed mb-9">
-          <div className=" grid grid-cols-2 gap-3 py-10">
+          <div className=" grid md:grid-cols-2 md:gap-3 gap-10 py-10">
             <div>
               <Image
                 src={"/xPayBlackIcon.avif"}
@@ -15,19 +15,19 @@ const InfoSection = () => {
                 height={50}
               />
             </div>
-            <div className=" grid grid-cols-3 gap-3">
+            <div className=" grid md:grid-cols-3 gap-3">
               <div>
                 <div className=" text-lg font-semibold mb-4">xPay</div>
                 <div className=" text-sm mb-2">Documentation</div>
                 <div className=" text-sm mb-2">Waitlist</div>
-                <div className=" text-sm mb-2">Pricing</div>
+                <div className=" text-sm md:mb-2 mb-12">Pricing</div>
               </div>
               <div>
-                <div className=" text-lg font-semibold mb-4">Policies</div>
+                <div className=" text-lg font-semibold mb-4 ">Policies</div>
                 <div className=" text-sm mb-2">Terms and Conditions</div>
                 <div className=" text-sm mb-2">Privacy Policy</div>
                 <div className=" text-sm mb-2">Shipping Policy</div>
-                <div className=" text-sm mb-2">
+                <div className=" text-sm md:mb-2 mb-12">
                   Cancellation and Refund Policy
                 </div>
               </div>

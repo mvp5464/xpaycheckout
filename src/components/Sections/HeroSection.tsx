@@ -6,19 +6,20 @@ const HeroSection = () => {
   return (
     <div className=" bg-[#141414] text-white ">
       <Wrapper>
-        <div>
-          <div className=" grid grid-cols-12 pb-5">
-            <div className=" col-span-7 pl-2">
-              <div className=" font-medium text-5xl leading-tight	my-4">
-                Market, Sell and Ship to customers from 150+ countries
+        <div className=" relative">
+          <div className=" grid md:grid-cols-12 pb-5s ">
+            <div className=" md:col-span-7 pl-2 ">
+              <div className=" font-medium md:text-5xl text-3xl leading-tight	my-4">
+                Accept Customer Payments from any country via cards, bank
+                accounts & more
               </div>
-              <div className=" text-2xl mb-10">
+              <div className=" md:text-2xl text-l mb-10">
                 Go live in US, EU, MENA and SEA via a single integration in
                 1/10th the time
               </div>
               <WaitlistButton color={"white"} />
             </div>
-            <div className=" col-span-5">
+            <div className=" md:col-span-5 h-[100%] overflow-hidden">
               <Image
                 src={"/GlobeImage.avif"}
                 alt={"Logo"}
@@ -27,7 +28,7 @@ const HeroSection = () => {
               />
             </div>
           </div>
-          <div className=" flex gap-1 justify-center items-center font-extralight text-xl pb-10">
+          <div className=" flex gap-1 justify-center absolute bottom-5 left-[0%] right-[0%] items-center font-extralight text-xl dpb-10">
             <span>Backed by </span>
             <Image
               src={"/Y-Combinator.avif"}

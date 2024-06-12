@@ -18,7 +18,7 @@ const Slider = () => {
     <div className=" bg-[#ebebeb]q bg-white py-1">
       <Wrapper>
         <div className=" my-16 py-16 bg-[#f2fbff] rounded-lg">
-          <div className=" text-center text-2xl text-[#141414] font-medium mb-8">
+          <div className=" text-center text-2xl text-[#141414] font-medium mb-8 mx-6">
             Helping teams at the world's best companies
           </div>
           <div
@@ -29,8 +29,9 @@ const Slider = () => {
             }}
           >
             <div className=" flex gap-20 justify-arounds pr-20 animate-loop-scroll ">
-              {allLogos.map((logo) => (
+              {allLogos.map((logo, index) => (
                 <Image
+                  key={index}
                   src={logo}
                   alt={"Logo"}
                   width={180}
@@ -43,8 +44,9 @@ const Slider = () => {
               className=" flex gap-20 pr-20 justify-arounds animate-loop-scroll"
               aria-hidden="true"
             >
-              {allLogos.map((logo) => (
+              {allLogos.map((logo, index) => (
                 <Image
+                  key={index}
                   src={logo}
                   alt={"Logo"}
                   width={180}

@@ -5,8 +5,8 @@ const OneTimePayments = () => {
   return (
     <div>
       <div className="">
-        <div className=" grid grid-cols-2 gap-20 items-center">
-          <div className="py-10 border rounded-[2rem]">
+        <div className=" grid md:grid-cols-2 gap-20 items-center">
+          <div className="py-10 order-2 border rounded-[2rem]">
             <Image
               src={"/OTPayment.avif"}
               alt={"Logo"}

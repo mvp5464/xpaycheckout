@@ -6,10 +6,10 @@ const Testimonials = () => {
     <div>
       <Wrapper>
         <div className=" py-20">
-          <div className=" font-[550] text-5xl text-center leading-tight mb-12">
+          <div className=" md:font-[550] font-[500] md:text-5xl text-[1.65rem] text-center leading-tight mb-12">
             Testimonials
           </div>
-          <div className=" grid grid-cols-3 gap-6">
+          <div className=" grid md:grid-cols-3 gap-6">
             <div>
               <TestimonialsCard
                 content={
