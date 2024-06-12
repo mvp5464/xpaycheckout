@@ -15,10 +15,10 @@ const Slider = () => {
     "/cLogo9.webp",
   ];
   return (
-    <div className=" bg-[#ebebeb]q bg-white py-1">
+    <div className=" bg-[#ebebeb]q bg-white text-[#141414] py-1">
       <Wrapper>
         <div className=" my-16 py-16 bg-[#f2fbff] rounded-lg">
-          <div className=" text-center text-2xl text-[#141414] font-medium mb-8 mx-6">
+          <div className=" text-center text-2xl font-medium mb-8 mx-6">
             Helping teams at the world&apos;s best companies
           </div>
           <div

@@ -22,27 +22,27 @@ const InfoSection = () => {
                 <div>
                   <div className=" text-lg font-semibold mb-4">xPay</div>
                   <div className=" text-sm mb-2">
-                    <Link href={"waitlist"}>Waitlist</Link>
+                    <Link href={"#waitlist"}>Waitlist</Link>
                   </div>
                   <div className=" text-sm md:mb-2 mb-12">
-                    <Link href={"waitlist"}>Pricing</Link>
+                    <Link href={"#pricing"}>Pricing</Link>
                   </div>
                 </div>
                 <div>
                   <div className=" text-lg font-semibold mb-4">Policies</div>
                   <div className=" text-sm mb-2">
-                    <Link href={"terms-and-condition"}>
+                    <Link href={"/terms-and-condition"}>
                       Terms and Conditions
                     </Link>
                   </div>
                   <div className=" text-sm mb-2">
-                    <Link href={"privacy-policy"}>Privacy Policy</Link>
+                    <Link href={"/privacy-policy"}>Privacy Policy</Link>
                   </div>
                   <div className=" text-sm mb-2">
-                    <Link href={"shipping-policy"}>Shipping Policy</Link>
+                    <Link href={"/shipping-policy"}>Shipping Policy</Link>
                   </div>
                   <div className=" text-sm md:mb-2 mb-12">
-                    <Link href={"cancellation-and-refund-policy"}>
+                    <Link href={"/cancellation-and-refund-policy"}>
                       Cancellation and Refund Policy
                     </Link>
                   </div>
@@ -58,6 +58,7 @@ const InfoSection = () => {
                     />
                     <span>
                       <Link
+                        target="_blank"
                         href={"https://www.linkedin.com/company/xpay-checkout/"}
                       >
                         LinkedIn
@@ -72,7 +73,12 @@ const InfoSection = () => {
                       height={25}
                     />
                     <span>
-                      <Link href={"mailto:hello@xpaycheckout.com"}>Email</Link>
+                      <Link
+                        target="_blank"
+                        href={"mailto:hello@xpaycheckout.com"}
+                      >
+                        Email
+                      </Link>
                     </span>
                   </div>
                   <div className=" text-sm mb-1 flex justify-start items-center gap-2 ">
@@ -84,6 +90,7 @@ const InfoSection = () => {
                     />
                     <span>
                       <Link
+                        target="_blank"
                         href={
                           "https://calendly.com/aniket-vem/talk-payments-with-xpay-pst"
                         }

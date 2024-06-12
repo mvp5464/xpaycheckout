@@ -22,6 +22,7 @@ const AppbarContent = () => {
         <button className=" flex bg-white hover:bg-[#141414] hover:text-white border border-white text-[#141414] rounded-full py-[0.7rem] md:px-6 px-2 transition ease-linear delay-150">
           <span>
             <Link
+              target="_blank"
               href={
                 "https://calendly.com/aniket-vem/talk-payments-with-xpay-pst"
               }

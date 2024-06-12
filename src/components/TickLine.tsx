@@ -11,7 +11,7 @@ const TickLine = ({
     <div>
       <div className=" flex items-center gap-2">
         <CheckIcon
-          className={`w-8 h-8 p-2 text-black ${
+          className={`w-8 h-8 p-2 text-black shrink-0 ${
             bgWhite ? "bg-[#d5dadd]" : "bg-white"
           } rounded-full `}
         />

@@ -6,10 +6,10 @@ const HeroSection = () => {
   return (
     <div className=" bg-[#141414] text-white ">
       <Wrapper>
-        <div className=" relative">
+        <div className=" relative ">
           <div className=" grid md:grid-cols-12 ">
-            <div className=" md:col-span-7 pl-2 ">
-              <div className=" font-medium md:text-5xl text-3xl leading-tight	my-4">
+            <div className=" md:col-span-7 pl-2 mb-20">
+              <div className=" font-medium md:text-5xl text-3xl leading-tight	my-10">
                 Accept Customer Payments from any country via cards, bank
                 accounts & more
               </div>
