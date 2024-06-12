@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
+import Appbar from "@/components/Sections/Appbar";
+import InfoSection from "@/components/Sections/InfoSection";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -20,7 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={outfit.className}>
-        <div className=" bg-[#141414] ">{children}</div>
+        <div className=" bg-[#141414] ">
+          <Appbar />
+          {children}
+          <InfoSection />
+        </div>
       </body>
     </html>
   );

@@ -4,9 +4,9 @@ import Wrapper from "../Wrapper";
 
 const Pricing = () => {
   return (
-    <div className=" bg-white">
+    <div className=" bg-white text-black" id="pricing">
       <Wrapper>
-        <div className=" py-20">
+        <div className=" py-24">
           <div className=" md:font-[550] font-[450] md:text-5xl text-[1.7rem] text-center leading-tight mb-16">
             Premium features without premium pricing
           </div>

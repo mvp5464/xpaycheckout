@@ -3,7 +3,7 @@ import Wrapper from "../Wrapper";
 
 const Testimonials = () => {
   return (
-    <div className=" bg-white">
+    <div className=" bg-white text-black">
       <Wrapper>
         <div className=" py-20">
           <div className=" md:font-[550] font-[500] md:text-5xl text-[1.65rem] text-center leading-tight mb-12">

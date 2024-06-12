@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import RightArrow from "./icons/RightArrow";
 import { motion, useAnimation } from "framer-motion";
 
@@ -28,7 +29,9 @@ const WaitlistButton = ({ color = "black" }: { color?: "white" | "black" }) => {
               : "bg-white text-black hover:bg-[#141414] hover:text-white"
           } flex gap-2 rounded-full py-3 px-6 transition ease-linear delay-150 border border-white`}
         >
-          <span>Join Waitlist</span>
+          <span>
+            <Link href={"#waitlist"}>Join Waitlist</Link>
+          </span>
           <motion.div animate={arrowControls} transition={{ duration: 0.2 }}>
             <RightArrow />
           </motion.div>

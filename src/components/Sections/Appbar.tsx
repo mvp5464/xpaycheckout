@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import ToggleButton from "./ToggleButton";
 import { useState } from "react";
 import AppbarContent from "../AppbarContent";
+import Link from "next/link";
 const Appbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState<boolean>(false);
   const variants = {
@@ -36,9 +37,9 @@ const Appbar = () => {
         variants={variants}
       >
         <div className=" flex justify-between items-center h-auto py-6 blur-[.5px] max-w-[75%] mx-auto ">
-          <div className=" ">
+          <Link href={"/"}>
             <Image src={"/Logo.avif"} alt={"Logo"} width={90} height={50} />
-          </div>
+          </Link>
           <div
             className={`flex md:hidden absolute top-10 pt-16 justify-center items-center  w-full flex-col gap-6  ${
               sidebarOpen ? "flex-col" : " hidden "

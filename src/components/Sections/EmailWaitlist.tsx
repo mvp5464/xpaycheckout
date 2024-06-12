@@ -2,9 +2,9 @@ import Wrapper from "../Wrapper";
 
 const EmailWaitlist = () => {
   return (
-    <div className=" bg-white">
+    <div className=" bg-white text-black" id="waitlist">
       <Wrapper>
-        <div className=" py-10">
+        <div className=" py-10 pt-32">
           <div className=" flex flex-col justify-around items-center gap-5s md:p-12 p-8 rounded-xl bg-gradient-to-r from-[#252525] to-[#101010] text-white ">
             <div className=" md:font-[650] font-[650] md:text-[2.7rem] text-[1.7rem] mb-3">
               Join the waitlist now

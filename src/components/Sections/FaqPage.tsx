@@ -3,7 +3,7 @@ import Wrapper from "../Wrapper";
 
 const FaqPage = () => {
   return (
-    <div className=" bg-white">
+    <div className=" bg-white text-black">
       <Wrapper>
         <div className=" md:py-16 py-10">
           <div className=" font-[450] md:text-[2.8rem] text-[1.6rem] text-center leading-tight md:mb-12 mb-2">

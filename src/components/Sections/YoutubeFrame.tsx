@@ -8,10 +8,11 @@ const YoutubeFrame = () => {
           <div className=" md:font-[500] font-[450] md:text-5xl text-3xl mb-5">
             Know the product
           </div>
-          <div className=" md:w-[70%] w-[100]% ">
+          <div className=" w-[100%] pb-[56.25%] relative">
             <iframe
+              className=" absolute"
               width="100%"
-              height="400px"
+              height="100%"
               src={
                 "https://www.youtube.com/embed/_oI3TlyYwWg?showinfo=0&iv_load_policy=3&controls=0"
               }

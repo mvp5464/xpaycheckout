@@ -3,7 +3,7 @@ import Wrapper from "../Wrapper";
 
 const Serving = () => {
   return (
-    <div className=" bg-white">
+    <div className=" bg-white text-black">
       <Wrapper>
         <div className=" py-20">
           <div className=" font-[550] md:text-5xl text-2xl text-center leading-tight mb-16">

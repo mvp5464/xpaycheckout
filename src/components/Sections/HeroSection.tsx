@@ -7,7 +7,7 @@ const HeroSection = () => {
     <div className=" bg-[#141414] text-white ">
       <Wrapper>
         <div className=" relative">
-          <div className=" grid md:grid-cols-12 pb-5s ">
+          <div className=" grid md:grid-cols-12 ">
             <div className=" md:col-span-7 pl-2 ">
               <div className=" font-medium md:text-5xl text-3xl leading-tight	my-4">
                 Accept Customer Payments from any country via cards, bank
