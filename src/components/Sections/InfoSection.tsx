@@ -3,9 +3,9 @@ import Wrapper from "../Wrapper";
 
 const InfoSection = () => {
   return (
-    <div>
+    <div className=" bg-white">
       <Wrapper>
-        <div className=" border-b border-dashed mb-9">
+        <div className=" border-b border-dashed ">
           <div className=" grid md:grid-cols-2 md:gap-3 gap-10 py-10">
             <div>
               <Image

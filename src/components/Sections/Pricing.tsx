@@ -4,7 +4,7 @@ import Wrapper from "../Wrapper";
 
 const Pricing = () => {
   return (
-    <div>
+    <div className=" bg-white">
       <Wrapper>
         <div className=" py-20">
           <div className=" md:font-[550] font-[450] md:text-5xl text-[1.7rem] text-center leading-tight mb-16">

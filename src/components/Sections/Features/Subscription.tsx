@@ -6,7 +6,7 @@ const Subscription = () => {
     <div>
       <div className=" bg-red-400s">
         <div className=" grid md:grid-cols-2 gap-20 items-center">
-          <div className="py-10 order-2">
+          <div className="py-10 md:order-2 order-1">
             <Image
               src={"/SubscriptionImage.webp"}
               alt={"Logo"}
@@ -15,12 +15,14 @@ const Subscription = () => {
               unoptimized
             />
           </div>
-          <FeaturesText
-            title={"Subscription"}
-            body={
-              "Create subscriptions easily for anywhere in the world using a single API"
-            }
-          />
+          <div className="md:order-2 order-1">
+            <FeaturesText
+              title={"Subscription"}
+              body={
+                "Create subscriptions easily for anywhere in the world using a single API"
+              }
+            />
+          </div>
         </div>
       </div>
     </div>

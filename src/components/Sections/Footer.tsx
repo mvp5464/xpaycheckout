@@ -3,9 +3,9 @@ import Wrapper from "../Wrapper";
 
 const Footer = () => {
   return (
-    <div>
+    <div className=" bg-white">
       <Wrapper>
-        <div className=" text-[#a3a3a3] text-sm md:mb-12 mb-4">
+        <div className=" text-[#a3a3a3] text-sm md:mb-12 pt-9 mb-4">
           <div className=" mb-3">
             Spiggle Technologies Private Limited | Payport Inc
           </div>

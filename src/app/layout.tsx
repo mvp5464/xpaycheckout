@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={outfit.className}>
-        <div className=" bg-white ">{children}</div>
+        <div className=" bg-[#141414] ">{children}</div>
       </body>
     </html>
   );

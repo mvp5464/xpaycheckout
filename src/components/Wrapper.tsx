@@ -5,7 +5,7 @@ import Animations from "./Animations";
 const Wrapper = ({ children }: { children: ReactNode }) => {
   return (
     <div>
-      <div className=" max-w-[85%]   mx-auto">
+      <div className=" md:max-w-[75%] max-w-[90%]   mx-auto">
         <Animations>{children}</Animations>
       </div>
     </div>

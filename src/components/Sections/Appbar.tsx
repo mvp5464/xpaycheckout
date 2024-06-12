@@ -2,61 +2,63 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import RightArrow from "../icons/RightArrow";
+import ToggleButton from "./ToggleButton";
 import { useState } from "react";
-
+import AppbarContent from "../AppbarContent";
 const Appbar = () => {
-  const [sidebarOpen, isSidebarOpen] = useState<boolean>(false);
+  const [sidebarOpen, setSidebarOpen] = useState<boolean>(false);
+  const variants = {
+    show: {
+      height: "20rem",
+      overflow: "hidden",
+      "padding-top": "5px",
+      "padding-right": "2.5rem",
+      transition: { duration: 0.2, ease: "easeInOut" },
+    },
+    hide: {
+      height: "auto",
+      padding: 0,
+      overflow: "hidden",
+      "padding-right": "2.5rem",
+      transition: { duration: 0.2, ease: "easeInOut" },
+    },
+  };
 
   return (
-    <div className=" bg-[#141414] text-[#ebebeb] w-full sticky top-0 z-10  ">
-      <div className=" flex justify-between items-center h-20 md:h-24 blur-[.5px] max-w-[85%] mx-auto ">
-        <div>
-          <Image src={"/Logo.avif"} alt={"Logo"} width={90} height={50} />
-        </div>
-        <div className=" md:flex gap-6 hidden">
-          <button>Pricing</button>
-          <button>Waitlist</button>
-          <button>Contact</button>
-          <button>Blogs</button>
-          <motion.div
-            whileHover={{ scaleX: 1.05 }}
-            style={{ originX: 1 }}
-            transition={{ duration: 0.2 }}
+    <>
+      <motion.div
+        className={` md:bg-[#141414]  text-[#ebebeb] w-full  fixed top-0 z-10  ${
+          sidebarOpen
+            ? " backdrop-blur-md bg-[#141414]/80 h-[20rem]"
+            : "bg-[#141414]"
+        }`}
+        animate={sidebarOpen ? "show" : "hide"}
+        variants={variants}
+      >
+        <div className=" flex justify-between items-center h-auto py-6 blur-[.5px] max-w-[75%] mx-auto ">
+          <div className=" ">
+            <Image src={"/Logo.avif"} alt={"Logo"} width={90} height={50} />
+          </div>
+          <div
+            className={`flex md:hidden absolute top-10 pt-16 justify-center items-center  w-full flex-col gap-6  ${
+              sidebarOpen ? "flex-col" : " hidden "
+            }`}
           >
-            <button className=" flex bg-white hover:bg-[#141414] hover:text-white border border-white text-[#141414] rounded-full py-[0.7rem] px-6 transition ease-linear delay-150">
-              <span>Talk to Founder&nbsp;</span> <RightArrow />
-            </button>
-          </motion.div>
+            <AppbarContent />
+          </div>
+          <div className={`md:flex flex-row gap-6 hidden -mr-10`}>
+            <AppbarContent />
+          </div>
+          <div className=" md:hidden block -mr-10 ">
+            <ToggleButton
+              setSidebarOpen={setSidebarOpen}
+              sidebarOpen={sidebarOpen}
+            />
+          </div>
         </div>
-        <div className=" md:hidden block">
-          <button
-            onClick={() => isSidebarOpen((p) => !p)}
-            className="flex flex-col justify-center items-center"
-          >
-            <span
-              className={`bg-white block transition-all duration-300 ease-out  h-0.5 w-6 rounded-sm ${
-                sidebarOpen ? "rotate-45 translate-y-2" : "-translate-y-0.5"
-              }`}
-            ></span>
-            <span
-              className={`bg-white block transition-all duration-300 ease-out 
-                      h-0.5 w-6 rounded-sm my-1 ${
-                        sidebarOpen ? "opacity-0" : "opacity-100"
-                      }`}
-            ></span>
-            <span
-              className={`bg-white block transition-all duration-300 ease-out 
-                      h-0.5 w-6 rounded-sm ${
-                        sidebarOpen
-                          ? "-rotate-45 -translate-y-1"
-                          : "translate-y-0.5"
-                      }`}
-            ></span>
-          </button>
-        </div>
-      </div>
-    </div>
+      </motion.div>
+      <div className=" h-20"></div>
+    </>
   );
 };
 
