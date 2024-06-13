@@ -13,14 +13,12 @@ const Appbar = () => {
       height: "20rem",
       overflow: "hidden",
       "padding-top": "5px",
-      "padding-right": "2.5rem",
       transition: { duration: 0.2, ease: "easeInOut" },
     },
     hide: {
       height: "auto",
       padding: 0,
       overflow: "hidden",
-      "padding-right": "2.5rem",
       transition: { duration: 0.2, ease: "easeInOut" },
     },
   };
@@ -39,14 +37,6 @@ const Appbar = () => {
         <div className=" flex justify-between items-center h-auto py-6 blur-[.5px] max-w-[75%] mx-auto ">
           <Link href={"/"}>
             <img src="/Logo.avif" alt="Logo" width={90} height={"auto"} />
-            {/* <Image
-              src={"/Logo.avif"}
-              alt={"Logo"}
-              width={90}
-              height={0}
-              className=" w-[auto] h-[30px]"
-              priority={true}
-            /> */}
           </Link>
           <div
             className={`flex md:hidden absolute top-10 pt-16 justify-center items-center  w-full flex-col gap-6  ${
@@ -58,7 +48,7 @@ const Appbar = () => {
           <div className={`md:flex flex-row gap-6 hidden -mr-10`}>
             <AppbarContent setSidebarOpen={setSidebarOpen} />
           </div>
-          <div className=" md:hidden block -mr-10 ">
+          <div className=" md:hidden block  ">
             <ToggleButton
               setSidebarOpen={setSidebarOpen}
               sidebarOpen={sidebarOpen}
