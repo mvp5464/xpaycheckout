@@ -23,8 +23,9 @@ const HeroSection = () => {
               <Image
                 src={"/GlobeImage.avif"}
                 alt={"Logo"}
-                width={500}
-                height={500}
+                width={0}
+                height={0}
+                className="w-[500px] h-auto"
               />
             </div>
           </div>
@@ -33,8 +34,9 @@ const HeroSection = () => {
             <Image
               src={"/Y-Combinator.avif"}
               alt={"Logo"}
-              width={150}
-              height={100}
+              width={0}
+              height={0}
+              className=" w-[150px] h-auto"
             />
           </div>
         </div>

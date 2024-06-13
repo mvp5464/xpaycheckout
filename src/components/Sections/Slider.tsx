@@ -34,9 +34,9 @@ const Slider = () => {
                   key={index}
                   src={logo}
                   alt={"Logo"}
-                  width={180}
-                  height={50}
-                  className=" max-w-none"
+                  width={0}
+                  height={0}
+                  className="max-w-none w-[180px] h-auto"
                 />
               ))}
             </div>
@@ -49,9 +49,9 @@ const Slider = () => {
                   key={index}
                   src={logo}
                   alt={"Logo"}
-                  width={180}
-                  height={50}
-                  className="max-w-none"
+                  width={0}
+                  height={0}
+                  className="max-w-none w-[180px] h-auto"
                 />
               ))}
             </div>

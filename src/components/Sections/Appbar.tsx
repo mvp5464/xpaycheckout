@@ -28,7 +28,7 @@ const Appbar = () => {
   return (
     <>
       <motion.div
-        className={` md:bg-[#141414]  text-[#ebebeb] w-full  fixed top-0 z-10  ${
+        className={` md:bg-[#141414]  text-[#ebebeb] w-full  fixed top-0 z-30  ${
           sidebarOpen
             ? " backdrop-blur-md bg-[#141414]/80 h-[20rem]"
             : "bg-[#141414]"
@@ -38,7 +38,14 @@ const Appbar = () => {
       >
         <div className=" flex justify-between items-center h-auto py-6 blur-[.5px] max-w-[75%] mx-auto ">
           <Link href={"/"}>
-            <Image src={"/Logo.avif"} alt={"Logo"} width={90} height={50} />
+            <Image
+              src={"/Logo.avif"}
+              alt={"Logo"}
+              width={0}
+              height={0}
+              className=" w-[90px] h-auto"
+              priority={true}
+            />
           </Link>
           <div
             className={`flex md:hidden absolute top-10 pt-16 justify-center items-center  w-full flex-col gap-6  ${
@@ -59,6 +66,12 @@ const Appbar = () => {
         </div>
       </motion.div>
       <div className=" h-20"></div>
+      {sidebarOpen && (
+        <div
+          onClick={() => setSidebarOpen(false)}
+          className=" fixed inset-0 z-20 h-[100%] items-center"
+        ></div>
+      )}
     </>
   );
 };

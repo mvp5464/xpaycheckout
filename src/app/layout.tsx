@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   description: "xPay Checkout | Y Combinator (YC W24)",
   icons: {
     icon: "/favicon.avif",
+    shortcut: "/favicon.avif",
+    apple: "/favicon.avif",
+    other: {
+      url: "/favicon.avif",
+    },
   },
 };
 
