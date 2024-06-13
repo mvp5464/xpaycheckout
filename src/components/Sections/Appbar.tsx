@@ -38,14 +38,15 @@ const Appbar = () => {
       >
         <div className=" flex justify-between items-center h-auto py-6 blur-[.5px] max-w-[75%] mx-auto ">
           <Link href={"/"}>
-            <Image
+            <img src="/Logo.avif" alt="Logo" width={90} height={"auto"} />
+            {/* <Image
               src={"/Logo.avif"}
               alt={"Logo"}
-              width={0}
+              width={90}
               height={0}
-              className=" w-[90px] h-auto"
+              className=" w-[auto] h-[30px]"
               priority={true}
-            />
+            /> */}
           </Link>
           <div
             className={`flex md:hidden absolute top-10 pt-16 justify-center items-center  w-full flex-col gap-6  ${

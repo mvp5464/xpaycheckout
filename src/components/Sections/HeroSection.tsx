@@ -23,9 +23,9 @@ const HeroSection = () => {
               <Image
                 src={"/GlobeImage.avif"}
                 alt={"Logo"}
-                width={0}
+                width={50}
                 height={0}
-                className="w-[500px] h-auto"
+                className="w-auto h-50px"
               />
             </div>
           </div>
