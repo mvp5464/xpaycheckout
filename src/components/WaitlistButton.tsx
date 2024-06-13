@@ -22,20 +22,20 @@ const WaitlistButton = ({ color = "black" }: { color?: "white" | "black" }) => {
         style={{ originX: 0 }}
         transition={{ duration: 0.2 }}
       >
-        <div
-          className={`${
-            color === "black"
-              ? "bg-[#141414] text-white"
-              : "bg-white text-black hover:bg-[#141414] hover:text-white"
-          } flex gap-2 rounded-full py-3 px-6 transition ease-linear delay-150 border border-white`}
-        >
-          <span>
-            <Link href={"/#waitlist"}>Join Waitlist</Link>
-          </span>
-          <motion.div animate={arrowControls} transition={{ duration: 0.2 }}>
-            <RightArrow />
-          </motion.div>
-        </div>
+        <Link href={"/#waitlist"}>
+          <div
+            className={`${
+              color === "black"
+                ? "bg-[#141414] text-white"
+                : "bg-white text-black hover:bg-[#141414] hover:text-white"
+            } flex gap-2 rounded-full py-3 px-6 transition ease-linear delay-150 border border-white`}
+          >
+            <span>Join Waitlist</span>
+            <motion.div animate={arrowControls} transition={{ duration: 0.2 }}>
+              <RightArrow />
+            </motion.div>
+          </div>
+        </Link>
       </motion.button>
     </div>
   );
