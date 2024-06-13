@@ -1,4 +1,3 @@
-import Image from "next/image";
 import FeaturesText from "../../FeaturesText";
 
 const PaymentLinks = () => {
@@ -14,13 +13,7 @@ const PaymentLinks = () => {
           />
         </div>
         <div className="py-10">
-          <Image
-            src={"/PLinksImage.webp"}
-            alt={"Logo"}
-            width={450}
-            height={450}
-            unoptimized
-          />
+          <img src="/PLinksImage.webp" alt="Logo" width={450} height={"auto"} />
         </div>
       </div>
     </div>

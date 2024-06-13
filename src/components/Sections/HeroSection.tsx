@@ -1,4 +1,3 @@
-import Image from "next/image";
 import WaitlistButton from "../WaitlistButton";
 import Wrapper from "../Wrapper";
 
@@ -20,23 +19,21 @@ const HeroSection = () => {
               <WaitlistButton color={"white"} />
             </div>
             <div className=" md:col-span-5 h-[100%] overflow-hidden">
-              <Image
-                src={"/GlobeImage.avif"}
-                alt={"Logo"}
-                width={50}
-                height={0}
-                className="w-auto h-50px"
+              <img
+                src="/GlobeImage.avif"
+                alt="Logo"
+                width={500}
+                height={"auto"}
               />
             </div>
           </div>
           <div className=" flex gap-1 justify-center absolute bottom-5 left-[0%] right-[0%] items-center font-extralight text-xl dpb-10">
             <span>Backed by </span>
-            <Image
-              src={"/Y-Combinator.avif"}
-              alt={"Logo"}
-              width={0}
-              height={0}
-              className=" w-[150px] h-auto"
+            <img
+              src="/Y-Combinator.avif"
+              alt="Logo"
+              width={150}
+              height={"auto"}
             />
           </div>
         </div>

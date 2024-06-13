@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const TestimonialsCard = ({
   content,
   image,
@@ -16,11 +14,11 @@ const TestimonialsCard = ({
       <div className=" flex flex-col justify-between items-center border rounded-2xl p-4 md:h-80">
         <div className="flex flex-col justify-start items-center mb-8 md:mb-0">
           <div className=" pb-2">
-            <Image
+            <img
               src={"/commaImage.avif"}
-              alt={"Logo"}
+              alt="Logo"
               width={25}
-              height={50}
+              height={"auto"}
             />
           </div>
           <div className=" text-[0.85rem] text-[#333333] leading-relaxed">
@@ -28,15 +26,13 @@ const TestimonialsCard = ({
           </div>
         </div>
         <div className="flex flex-col justify-end items-center">
-          <div className=" w-10 md:w-25">
-            <Image
-              src={image}
-              alt={"Logo"}
-              width={55}
-              height={50}
-              className=" rounded-full"
-            />
-          </div>
+          <img
+            src={image}
+            alt="Logo"
+            width={60}
+            height={"auto"}
+            className="rounded-full w-10 md:w-14"
+          />
           <div className=" text-[#333333] font-semibold md:text-[1.4rem] text-[1rem] ">
             {name}
           </div>

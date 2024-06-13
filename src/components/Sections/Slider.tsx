@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Wrapper from "../Wrapper";
 
 const Slider = () => {
@@ -30,13 +29,13 @@ const Slider = () => {
           >
             <div className=" flex gap-20 justify-arounds pr-20 animate-loop-scroll ">
               {allLogos.map((logo, index) => (
-                <Image
+                <img
                   key={index}
                   src={logo}
-                  alt={"Logo"}
-                  width={0}
-                  height={0}
-                  className="max-w-none w-[180px] h-auto"
+                  alt="Logo"
+                  width={180}
+                  height={"auto"}
+                  className="max-w-none"
                 />
               ))}
             </div>
@@ -45,13 +44,13 @@ const Slider = () => {
               aria-hidden="true"
             >
               {allLogos.map((logo, index) => (
-                <Image
+                <img
                   key={index}
                   src={logo}
-                  alt={"Logo"}
-                  width={0}
-                  height={0}
-                  className="max-w-none w-[180px] h-auto"
+                  alt="Logo"
+                  width={180}
+                  height={"auto"}
+                  className="max-w-none"
                 />
               ))}
             </div>

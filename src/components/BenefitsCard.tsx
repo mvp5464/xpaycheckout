@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const SingleBenefits = ({
   image,
   title,
@@ -14,7 +12,7 @@ const SingleBenefits = ({
       <div className=" grid md:grid-cols-4 md:pb-24 pb-10 mx-4 md:pt-16 pt-6 pr-3">
         <div className=" col-span-1 flex justify-center">
           <div className=" ml-2 mb-2">
-            <Image src={image} alt={"Logo"} width={65} height={50} />
+            <img src={image} alt="Logo" width={65} height={"auto"} />
           </div>
         </div>
         <div className=" col-span-3 md:h-28 mx-2">

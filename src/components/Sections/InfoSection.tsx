@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Wrapper from "../Wrapper";
 import Footer from "./Footer";
 import Link from "next/link";
@@ -11,11 +10,11 @@ const InfoSection = () => {
           <div className=" border-b border-dashed ">
             <div className=" grid md:grid-cols-2 md:gap-3 gap-10 py-10">
               <Link href={"/"}>
-                <Image
+                <img
                   src={"/xPayBlackIcon.avif"}
-                  alt={"Logo"}
+                  alt="Logo"
                   width={150}
-                  height={50}
+                  height={"auto"}
                 />
               </Link>
               <div className=" grid md:grid-cols-3 gap-3">
@@ -50,11 +49,11 @@ const InfoSection = () => {
                 <div>
                   <div className=" text-lg font-semibold mb-4">Contact</div>
                   <div className=" text-sm mb-1 flex justify-start items-center gap-2">
-                    <Image
+                    <img
                       src={"/linkedinIcon.avif"}
-                      alt={"Logo"}
+                      alt="Logo"
                       width={25}
-                      height={25}
+                      height={"auto"}
                     />
                     <span>
                       <Link
@@ -66,11 +65,11 @@ const InfoSection = () => {
                     </span>
                   </div>
                   <div className=" text-sm mb-1 flex justify-start items-center gap-2">
-                    <Image
+                    <img
                       src={"/emailIcon.avif"}
-                      alt={"Logo"}
+                      alt="Logo"
                       width={25}
-                      height={25}
+                      height={"auto"}
                     />
                     <span>
                       <Link
@@ -82,11 +81,11 @@ const InfoSection = () => {
                     </span>
                   </div>
                   <div className=" text-sm mb-1 flex justify-start items-center gap-2 ">
-                    <Image
+                    <img
                       src={"/phoneIcon.avif"}
-                      alt={"Logo"}
+                      alt="Logo"
                       width={25}
-                      height={25}
+                      height={"auto"}
                     />
                     <span>
                       <Link
