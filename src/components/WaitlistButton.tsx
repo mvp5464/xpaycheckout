@@ -30,7 +30,7 @@ const WaitlistButton = ({ color = "black" }: { color?: "white" | "black" }) => {
           } flex gap-2 rounded-full py-3 px-6 transition ease-linear delay-150 border border-white`}
         >
           <span>
-            <Link href={"#waitlist"}>Join Waitlist</Link>
+            <Link href={"/#waitlist"}>Join Waitlist</Link>
           </span>
           <motion.div animate={arrowControls} transition={{ duration: 0.2 }}>
             <RightArrow />

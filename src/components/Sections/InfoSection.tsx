@@ -22,10 +22,10 @@ const InfoSection = () => {
                 <div>
                   <div className=" text-lg font-semibold mb-4">xPay</div>
                   <div className=" text-sm mb-2">
-                    <Link href={"#waitlist"}>Waitlist</Link>
+                    <Link href={"/#waitlist"}>Waitlist</Link>
                   </div>
                   <div className=" text-sm md:mb-2 mb-12">
-                    <Link href={"#pricing"}>Pricing</Link>
+                    <Link href={"/#pricing"}>Pricing</Link>
                   </div>
                 </div>
                 <div>

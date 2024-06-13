@@ -45,10 +45,10 @@ const Appbar = () => {
               sidebarOpen ? "flex-col" : " hidden "
             }`}
           >
-            <AppbarContent />
+            <AppbarContent setSidebarOpen={setSidebarOpen} />
           </div>
           <div className={`md:flex flex-row gap-6 hidden -mr-10`}>
-            <AppbarContent />
+            <AppbarContent setSidebarOpen={setSidebarOpen} />
           </div>
           <div className=" md:hidden block -mr-10 ">
             <ToggleButton
