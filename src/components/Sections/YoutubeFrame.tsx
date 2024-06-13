@@ -14,7 +14,7 @@ const YoutubeFrame = () => {
               width="100%"
               height="100%"
               src={
-                "https://www.youtube.com/embed/_oI3TlyYwWg?showinfo=0&iv_load_policy=3&controls=0"
+                "https://www.youtube.com/embed/_oI3TlyYwWg?showinfo=0&iv_load_policy=3"
               }
               title="YouTube video player"
               allow="accelerometer; gyroscope; picture-in-picture;"
